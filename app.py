@@ -1,11 +1,13 @@
 #/
 #    author:   abhijayrajvansh
-#    created:  27.01.2022 15:01:16
+#    created:  29.01.2022 01:55:46
 #/
 from turtle import color
 import colorama
 from colorama import Fore
 colorama.init(autoreset = True)
+
+crypto_name = input("Enter The Cyptocurrency Name : ")
 
 initial_coin_price = input("Enter The *Current* Value of Coin          : ")
 initial_coin_price = float(initial_coin_price)
@@ -32,7 +34,7 @@ total_profit = round((sellingPrice_brokerage - initial_buying_amt), 2)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Table ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 print("\nPercent Gain In Coin Price : " + f"{Fore.RED}" + str(initial_coin_price) + " -> " + f"{Fore.GREEN}" + str(BID_coin_price) + f"{Fore.GREEN}" + " ⬆ " + str(percent_increase) + "%")
-print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+print("~~~~~~~~~~~~~~~~~~~~~~( " + crypto_name + " )~~~~~~~~~~~~~~~~~~~~~~")
 print("| Final Coin Value                         : " + str(BID_coin_price))
 print("| Final Selling Amount                     : " + str(final_amt))
 if total_profit > 0 :
