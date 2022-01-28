@@ -20,5 +20,6 @@ echo " "
 echo "-----------------------------------------------------------------------------------------------------"
 sleep 1
 echo "Running Files..."
+echo ""
 alias python='python3'
 python app.py
