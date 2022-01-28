@@ -7,7 +7,7 @@ import colorama
 from colorama import Fore
 colorama.init(autoreset = True)
 
-crypto_name = input("Enter The Cyptocurrency Name : ")
+crypto_name = input("Enter The Cyptocurrency Name               : ")
 
 initial_coin_price = input("Enter The *Current* Value of Coin          : ")
 initial_coin_price = float(initial_coin_price)
