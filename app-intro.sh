@@ -15,11 +15,11 @@ echo -e "${Orange}@@*************            ************@${NC}"
 echo -e "${Orange}@@@***********  **  ******************@@${NC}              Copyright © All Rights Reserved by"
 echo -e "${Orange}@@@@@*******************************@@@@${NC}                       Abhijay Rajvansh"
 echo -e "${Orange}@@@@@@@***************************@@@@@@${NC}"
-echo -e "${Orange}@@@@@@@@@@@*******************@@@@@@@@@@${NC}        Contact Developer : abhijayrajvansh01@gmail.com"
+echo -e "${Orange}@@@@@@@@@@@*******************@@@@@@@@@@${NC}          Contact Developer : abhijayrajvansh01@gmail.com"
 echo " "
 echo "-----------------------------------------------------------------------------------------------------"
 sleep 1
 echo "Running Files..."
-echo ""
+echo " "
 alias python='python3'
-python app.py
+python3 app.py
