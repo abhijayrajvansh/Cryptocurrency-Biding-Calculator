@@ -2,6 +2,7 @@
 #    author:   abhijayrajvansh
 #    created:  29.01.2022 01:55:46
 #/
+from doctest import IGNORE_EXCEPTION_DETAIL
 from turtle import color
 import colorama
 from colorama import Fore
@@ -16,6 +17,7 @@ def calc ():
     initial_coin_price = float(initial_coin_price)
     initial_buying_amt = input("Enter The *Initial* Buying Amount          : ")
     initial_buying_amt = float(initial_buying_amt)
+    initial_buying_amt = initial_buying_amt - ((initial_buying_amt * 0.2) / 100)
     choice = input("\n - '1' For Percentage Calculation\n - '2' For Biding Calculation\n\nChoice                                     : ")
     choice = int(choice)
     if choice == 1:
