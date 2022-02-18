@@ -2,8 +2,6 @@
 #    author:   abhijayrajvansh
 #    created:  29.01.2022 01:55:46
 #/
-from doctest import IGNORE_EXCEPTION_DETAIL
-from turtle import color
 import colorama
 from colorama import Fore
 import time
@@ -17,7 +15,7 @@ def calc ():
     initial_coin_price = float(initial_coin_price)
     initial_buying_amt = input("Enter The *Initial* Buying Amount          : ")
     initial_buying_amt = float(initial_buying_amt)
-    initial_buying_amt = initial_buying_amt - ((initial_buying_amt * 0.2) / 100)
+    initial_buying_amt = initial_buying_amt + ((initial_buying_amt * 0.1) / 100)
     choice = input("\n - '1' For Percentage Calculation\n - '2' For Biding Calculation\n\nChoice                                     : ")
     choice = int(choice)
     if choice == 1:
@@ -31,7 +29,7 @@ def calc ():
         BID_coin_price = float(safe_BID_Value)
 
     final_amt = round(initial_buying_amt + ((initial_buying_amt * percent_increase) / 100), 4)
-    sellingPrice_brokerage = round(final_amt - ((final_amt * 0.2) / 100), 4)
+    sellingPrice_brokerage = round(final_amt - ((final_amt * 0.1) / 100), 4)
     total_profit = round((sellingPrice_brokerage - initial_buying_amt), 4)
 
     print("\nPercent Gain In Coin Price : " + f"{Fore.RED}" + str(initial_coin_price) + " -> " + f"{Fore.GREEN}" + str(BID_coin_price) + f"{Fore.GREEN}" + " ⬆ " + str(percent_increase) + "%")
